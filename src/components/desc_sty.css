@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Adjust the width as needed */
+  margin: auto;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Text color */
+}
+
+.text-container h1 {
+  margin: 0;
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .circular-image {
+    width: 150px;
+    height: 150px;
+  }
+}

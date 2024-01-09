@@ -1,0 +1,18 @@
+.text-containera {
+    margin-top: 0px; /* Add some space between this and the previous container */
+    position:relative;
+    font-size: 30px;
+    font-weight:800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .red { color: rgb(255, 106, 106); }
+  .green { color: rgb(108, 237, 108); }
+  .blue { color: rgb(110, 214, 255); }
+  .orange { color: rgb(255, 207, 118); }
+  .purple { color: rgb(252, 106, 252); }
+  .teal { color: rgb(88, 246, 246); }
+  .pink { color: pink; }
+  .yellow { color: rgb(251, 251, 160); }
+  .brown { color: brown; }
+  

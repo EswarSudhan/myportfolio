@@ -1,0 +1,31 @@
+[
+    {
+      "text": "COMPUTER VISION",
+      "imageURL": "./img/compvis.jpg",
+      "link": "https://www.google.com/search?q=usehistory+not+found+in+react-router-dom&rlz=1C1CHBF_enIN925IN925&oq=useHi&gs_lcrp=EgZjaHJvbWUqBwgDEAAYgAQyDQgAEAAYgwEYsQMYgAQyBwgBEAAYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDM4OTRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+    },
+    {
+      "text": "DATA SCIENCE",
+      "imageURL": "./img/datasci1.jpg",
+      "link": ""
+    },
+    {
+        "text": "DATA ANALYSIS",
+        "imageURL": "./img/dataana.jpg",
+        "link": ""
+      },
+      {
+        "text": "WEB DEVELOPMENT",
+        "imageURL": "./img/webdev.jpg",
+        "link": ""
+      },
+      {
+          "text": "PHOTOGRAPHY",
+          "imageURL": "./img/pho.jpg",
+          "link": ""
+        }
+      
+    
+  ]
+  
+  

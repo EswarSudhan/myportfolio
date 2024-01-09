@@ -1,0 +1,40 @@
+.project-page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .project-container.even {
+    flex-direction: row-reverse; /* Reverse the order for even containers */
+  }
+  
+  .image-container,
+  .text-container {
+    width: 50%; /* Each container takes half of the project-container width */
+  }
+  
+  .image-container {
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-container {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .text-container p {
+    margin: 0;
+    font-size: 20px;
+  }
+  
