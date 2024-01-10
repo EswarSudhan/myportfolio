@@ -7,7 +7,7 @@ const DynamicContainer = () => {
   const history = useNavigate();
 
   const redirectToPage = (pageUrl) => {
-    history.push(pageUrl);
+    history(pageUrl);
   };
 
   return (

@@ -1,13 +1,18 @@
-.container {
+/* desc_sty.css */
+
+.con {
   position: relative;
   width: 100%;
-  height: 100%; /* Adjust the width as needed */
+  height: 100%;
   margin: auto;
+  background-color: rgb(48, 48, 48);
+  
 }
 
-.image-container {
+.image-con {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .background-image {
@@ -22,18 +27,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white; /* Text color */
+  color: white;
 }
 
 .text-container h1 {
   margin: 0;
-  font-size: 24px; /* Adjust font size as needed */
+  font-size: 24px;
 }
 
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  .circular-image {
-    width: 150px;
-    height: 150px;
-  }
+.circular-image {
+  
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white; /* White border */
+  border-radius: 50%; /* Circular shape */
+  overflow: hidden;
+  align-items: center;
+}
+
+.circular-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Ensure the image inside the circle is also circular */
 }

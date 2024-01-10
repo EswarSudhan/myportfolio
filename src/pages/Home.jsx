@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="App">
       <Desc />
-      <CircularImage />
+      {/*<CircularImage />*/}
       {/*<TextContainer/>*/}
       <Project/>
     </div>

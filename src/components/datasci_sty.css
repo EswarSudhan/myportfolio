@@ -1,12 +1,70 @@
-.container {
+.pagecon{
+    color: #333;
+}
+
+.containersci {
     display: flex;
     background-color: #00ffd955; /* Green color */
+    padding: 5px;
+    align-items: center;
+    
+    margin:5px
+    
+    
+  }
+
+  .containerana {
+    display: flex;
+    background-color: #00ff8855; /* Green color */
     padding: 5px;
     align-items: center;
     margin: 5px;
     
   }
 
+  .containervis {
+    display: flex;
+    background-color: #ff000055; /* Green color */
+    padding: 5px;
+    align-items: center;
+    margin: 5px;
+    
+  }
+
+  .containerdev {
+    display: flex;
+    background-color: #ff00cc55; /* Green color */
+    padding: 5px;
+    align-items: center;
+    margin: 5px;
+    
+  }
+
+
+/* styles.css */
+
+.navbar {
+    position: relative; /* Needed for stacking context */
+    background-color: #ffffff; /* Set the background color of the navbar */
+    color: #fff; /* Set the default text color */
+    text-align: center;
+    padding: 10px;
+    font-size: 24px; /* Adjust the font size as needed */
+    font-family: Verdana, sans-serif; /* Stylish font with shadow */
+    font-style: normal
+  }
+  
+  .navbar-title {
+    margin: 0;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Text shadow effect */
+    background-image: linear-gradient(0deg, #fffefd, #00ffff); /* Adjust the gradient colors */
+    -webkit-background-clip: text; /* Apply the gradient only to the text (for Safari) */
+   
+    position: relative; /* Needed for stacking context */
+    z-index: 1; /* Bring the text to the front */
+  }
+  
+  
   
   .image-container {
     flex: 0 0 400px;
