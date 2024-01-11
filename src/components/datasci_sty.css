@@ -56,7 +56,7 @@
   
   .navbar-title {
     margin: 0;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Text shadow effect */
+    text-shadow: 5px 5px 10px rgb(0, 0, 0); /* Text shadow effect */
     background-image: linear-gradient(0deg, #fffefd, #00ffff); /* Adjust the gradient colors */
     -webkit-background-clip: text; /* Apply the gradient only to the text (for Safari) */
    
