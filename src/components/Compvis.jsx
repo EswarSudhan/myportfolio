@@ -1,15 +1,23 @@
 import React from 'react';
 import './datasci_sty.css';
+import { useNavigate } from 'react-router-dom';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 
 const Compvis = () => {
+
+  const history = useNavigate();
+
+  const redirectToPage = (pageUrl) => {
+    history(pageUrl);}
   
   const imgurl= process.env.PUBLIC_URL + './img/DSC05230.JPG'
 
   return (
     <div>
         <div className="navbar">
-      <h1 className="navbar-title">Your Title</h1>
+        <h1 className="navbar-title" onClick={() => redirectToPage("/")}><ArrowBackIosNewIcon/>Back</h1>
     </div>
     <div className="containervis">
       <div className="image-container">

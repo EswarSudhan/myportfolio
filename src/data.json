@@ -1,27 +1,32 @@
 [
     {
       "text": "COMPUTER VISION",
-      "imageURL": "./img/compvis.jpg",
+      "imageURL": "./img/compvis_2.jpg",
       "link": "/computervision"
     },
     {
       "text": "DATA SCIENCE",
-      "imageURL": "./img/datasci1.jpg",
+      "imageURL": "./img/datasci1_2.jpg",
       "link": "/datascience"
     },
     {
         "text": "DATA ANALYSIS",
-        "imageURL": "./img/dataana.jpg",
+        "imageURL": "./img/dataana_2.jpg",
         "link": "/dataanalysis"
       },
       {
         "text": "WEB DEVELOPMENT",
-        "imageURL": "./img/webdev.jpg",
+        "imageURL": "./img/webdev_2.jpg",
         "link": "/webdevelopment"
       },
       {
           "text": "PHOTOGRAPHY",
-          "imageURL": "./img/pho.jpg",
+          "imageURL": "./img/pho_2.jpg",
+          "link": ""
+        },
+        {
+          "text": "PHOTOGRAPHY",
+          "imageURL": "./img/pho_2.jpg",
           "link": ""
         }
         

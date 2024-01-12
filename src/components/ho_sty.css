@@ -1,0 +1,24 @@
+/* HorizontalContainer.css */
+
+.horizontal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 255, 115, 0.81); /* Green color with opacity */
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px; /* Set your desired height */
+    padding: 10px; /* Set your desired padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.); /* Optional: Add box shadow for a subtle effect */
+    color: #fff; /* Set text color to white */
+    border-radius: 10px;
+    margin: 5px;
+  }
+  
+  /* Optional: Add more styles for your content inside the container */
+  .horizontal-container p {
+    margin: 0;
+    font-size: 18px;
+  }
+  

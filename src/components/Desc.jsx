@@ -4,7 +4,7 @@ import React from 'react';
 import './desc_sty.css';
 
 const Desc = () => {
-  const imgUrl = process.env.PUBLIC_URL + '/img/DSC05232_a.JPG';
+  const imgUrl = process.env.PUBLIC_URL + '/img/DSC05232_a1.JPG';
   const circularImgUrl = process.env.PUBLIC_URL + '/img/DSC05232_a.JPG'; // Replace with the actual circular image URL
 
   return (
