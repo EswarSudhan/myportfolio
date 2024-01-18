@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Desc from './myportfolio/src/components/Desc';
+import Desc from '../components/Desc';
 import CircularImage from '../components/CircularImg'; // Update the path to CircularImage
 import TextContainer from '../components/TextContainer';
 import Project from '../components/Project';
