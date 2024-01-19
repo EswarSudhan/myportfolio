@@ -26,7 +26,8 @@ const Datasci = () => {
 
   const redirectToPage = (pageUrl) => {
     history(pageUrl);}
-  const imgurl= process.env.PUBLIC_URL + './img/cov.JPG'
+  const imgurl1= process.env.PUBLIC_URL + './img/emobot.JPG'
+  const imgurl2= process.env.PUBLIC_URL + './img/simclr.JPG'
 
   return (
     <div>
@@ -40,30 +41,45 @@ const Datasci = () => {
    
     <div className="containersci">
       <div className="image-container">
-        <img src={imgurl} className="image" />
+        <img src={imgurl1} className="image" />
       </div>
       <div className="text-con">
-        <p>If you want to enforce a fixed size for the image regardless of its actual dimensions, you can update the CSS styles to set a fixed width and height for the image container. Additionally, you might want to handle the overflow of the image to prevent it from distorting. Here's an updated version of the CSS:
+        <p>Project Title: Enhanced Chatbot with Facial Emotion Recognition (May 2023 - June 2023)</p>
+        <p>
+
+Objective:
+To develop an intelligent chatbot incorporating Facial Emotion Recognition to assess user satisfaction with responses. The chatbot adapts and refines answers based on the user's facial expressions.
+</p><p>
+Tools/Technologies Used:
+Langchain, Tensorflow, OpenCV, Streamlit
+</p><p>
+Outcome:
+Implemented a responsive chatbot system where user satisfaction is gauged through facial emotion analysis. Leveraging Langchain, answers were dynamically reframed by the chatbot, showcasing an innovative approach to improving user interaction. Explore this project to witness how cutting-edge technologies can elevate conversational AI, creating a more personalized and engaging user experience.
           <GitHubIcon/>
         </p>
       </div>
     </div>
     <div className="containersci">
       <div className="image-container">
-        <img src={imgurl} className="image" />
+        <img src={imgurl2} className="image" />
       </div>
       <div className="text-con">
-        <p>If you want to enforce a fixed size for the image regardless of its actual dimensions, you can update the CSS styles to set a fixed width and height for the image container. Additionally, you might want to handle the overflow of the image to prevent it from distorting. Here's an updated version of the CSS:</p>
+        <p>Project Title: Enhanced Chatbot with Facial Emotion Recognition (May 2023 - June 2023)</p>
+        <p>
+
+Objective:
+To develop an intelligent chatbot incorporating Facial Emotion Recognition to assess user satisfaction with responses. The chatbot adapts and refines answers based on the user's facial expressions.
+</p><p>
+Tools/Technologies Used:
+Langchain, Tensorflow, OpenCV, Streamlit
+</p><p>
+Outcome:
+Implemented a responsive chatbot system where user satisfaction is gauged through facial emotion analysis. Leveraging Langchain, answers were dynamically reframed by the chatbot, showcasing an innovative approach to improving user interaction. Explore this project to witness how cutting-edge technologies can elevate conversational AI, creating a more personalized and engaging user experience.
+          <GitHubIcon/>
+        </p>
       </div>
     </div>
-    <div className="containersci">
-      <div className="image-container">
-        <img src={imgurl} className="image" />
-      </div>
-      <div className="text-con">
-        <p>If you want to enforce a fixed size for the image regardless of its actual dimensions, you can update the CSS styles to set a fixed width and height for the image container. Additionally, you might want to handle the overflow of the image to prevent it from distorting. Here's an updated version of the CSS:</p>
-      </div>
-    </div>
+   
     </div>
   );
 };

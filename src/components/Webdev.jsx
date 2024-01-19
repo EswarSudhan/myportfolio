@@ -24,7 +24,7 @@ const Webdev = () => {
 
   const redirectToPage = (pageUrl) => {
     history(pageUrl);}
-  const imgurl= process.env.PUBLIC_URL + './img/DSC05230.JPG'
+  const imgurl1= process.env.PUBLIC_URL + './img/mern1.JPG'
 
   return (
     <div>
@@ -33,28 +33,25 @@ const Webdev = () => {
     </div>
     <div className="containerdev">
       <div className="image-container">
-        <img src={imgurl} className="image" />
+        <img src={imgurl1} className="image" />
       </div>
       <div className="text-con">
-        <p>If you want to enforce a fixed size for the image regardless of its actual dimensions, you can update the CSS styles to set a fixed width and height for the image container. Additionally, you might want to handle the overflow of the image to prevent it from distorting. Here's an updated version of the CSS:</p>
+        <p>Project Title: Pharmacy App - MERN Stack</p>
+        <p>
+
+Objective:
+Developed a comprehensive Pharmacy App using the MERN (MongoDB, Express.js, React, Node.js) stack. The application caters to three distinct user roles: Customer, Admin, and Retailer.
+</p>
+<p>
+Technologies Used:
+MERN Stack (MongoDB, Express.js, React, Node.js)
+</p>
+<p>
+Outcome:
+A fully functional Pharmacy App that streamlines the buying process for customers, empowers admins with inventory management capabilities, and provides retailers with a convenient way to track and fulfill orders. </p>
       </div>
     </div>
-    <div className="containerdev">
-      <div className="image-container">
-        <img src={imgurl} className="image" />
-      </div>
-      <div className="text-con">
-        <p>If you want to enforce a fixed size for the image regardless of its actual dimensions, you can update the CSS styles to set a fixed width and height for the image container. Additionally, you might want to handle the overflow of the image to prevent it from distorting. Here's an updated version of the CSS:</p>
-      </div>
-    </div>
-    <div className="containerdev">
-      <div className="image-container">
-        <img src={imgurl} className="image" />
-      </div>
-      <div className="text-con">
-        <p>If you want to enforce a fixed size for the image regardless of its actual dimensions, you can update the CSS styles to set a fixed width and height for the image container. Additionally, you might want to handle the overflow of the image to prevent it from distorting. Here's an updated version of the CSS:</p>
-      </div>
-    </div>
+    
     </div>
   );
 };

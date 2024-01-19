@@ -5,12 +5,14 @@ import CircularImage from '../components/CircularImg'; // Update the path to Cir
 import TextContainer from '../components/TextContainer';
 import Project from '../components/Project';
 import Hocon from '../components/Hocon';
+import Hocona from '../components/Hocona';
 const Home = () => {
   return (
     <div className="App">
       <Desc />
       {/*<CircularImage />*/}
       {/*<TextContainer/>*/}
+      <Hocona/>
       <Project/>
       <Hocon/>
     </div>

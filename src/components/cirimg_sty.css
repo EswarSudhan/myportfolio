@@ -1,4 +1,4 @@
-.circular-container {
+.acircular-container {
   position: relative;
   
   align-items: center;
@@ -12,7 +12,7 @@
   z-index: 1; /* Adjust the z-index as needed to control the stacking order */
 }
 
-.circular-image {
+.acircular-image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -22,7 +22,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.circular-image img {
+.acircular-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;

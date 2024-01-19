@@ -20,7 +20,7 @@ body {
 
 .containerana {
   display: flex;
-  background-color: #00ff99e8;
+  background-color: #8dffd2e8;
   padding: 5px;
   align-items: center;
   margin: 5px;
@@ -29,7 +29,7 @@ body {
 
 .containervis {
   display: flex;
-  background-color: #fa6e6ef4;
+  background-color: #ff8989f4;
   padding: 5px;
   align-items: center;
   margin: 5px;
@@ -38,7 +38,7 @@ body {
 
 .containerdev {
   display: flex;
-  background-color: #ff00cc55;
+  background-color: #fe96e9ee;
   padding: 5px;
   align-items: center;
   margin: 5px;
@@ -87,8 +87,8 @@ body {
   .text-con {
     flex: 1;
     padding: 0 20px;
-    color: #353535; /* White text color */
-    display:flex;
+    color: #313131; /* White text color */
+    
     font-family: Consolas, monaco, monospace;
     font-size:20px;
    

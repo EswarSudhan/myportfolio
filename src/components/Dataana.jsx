@@ -14,7 +14,7 @@ const Dataana = () => {
     history(pageUrl);}
   
     
-  const imgurl= process.env.PUBLIC_URL + './img/DSC05230.JPG'
+  const imgurl1= process.env.PUBLIC_URL + './img/cov.JPG'
 
   return (
     <div>
@@ -23,28 +23,24 @@ const Dataana = () => {
     </div>
     <div className="containerana">
       <div className="image-container">
-        <img src={imgurl} className="image" />
+        <img src={imgurl1} className="image" />
       </div>
       <div className="text-con">
-        <p>If you want to enforce a fixed size for the image regardless of its actual dimensions, you can update the CSS styles to set a fixed width and height for the image container. Additionally, you might want to handle the overflow of the image to prevent it from distorting. Here's an updated version of the CSS:</p>
+        <p>Project Title: Covid-19 Forecasting and Comparative Analysis (Dec 2022 - Jan 2023)</p>
+
+<p>Objective:
+To forecast confirmed COVID-19 cases in USA states using Dynamic Mode Decomposition (DMD) and conduct a comparative analysis with other forecasting models such as SARIMAX, ARIMA, and ARMA on time series data.
+</p>
+<p>
+Tools/Technologies Used:
+MATLAB, Python (Pandas, Matplotlib, Statsmodel)
+</p>
+<p>
+Outcome:
+Successfully achieved a Root Mean Square Value of 969 cases using DMD, showcasing its superior performance compared to other models. The project demonstrates proficiency in utilizing advanced forecasting techniques and provides valuable insights into the strengths of Dynamic Mode Decomposition in predicting COVID-19 trends.</p>
       </div>
     </div>
-    <div className="containerana">
-      <div className="image-container">
-        <img src={imgurl} className="image" />
-      </div>
-      <div className="text-con">
-        <p>If you want to enforce a fixed size for the image regardless of its actual dimensions, you can update the CSS styles to set a fixed width and height for the image container. Additionally, you might want to handle the overflow of the image to prevent it from distorting. Here's an updated version of the CSS:</p>
-      </div>
-    </div>
-    <div className="containerana">
-      <div className="image-container">
-        <img src={imgurl} className="image" />
-      </div>
-      <div className="text-con">
-        <p>If you want to enforce a fixed size for the image regardless of its actual dimensions, you can update the CSS styles to set a fixed width and height for the image container. Additionally, you might want to handle the overflow of the image to prevent it from distorting. Here's an updated version of the CSS:</p>
-      </div>
-    </div>
+    
     </div>
   );
 };
