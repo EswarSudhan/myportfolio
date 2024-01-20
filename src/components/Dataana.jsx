@@ -12,6 +12,11 @@ const Dataana = () => {
 
   const redirectToPage = (pageUrl) => {
     history(pageUrl);}
+
+    const redirectToGitHub = (githubUrl) => {
+      window.location.href = githubUrl;
+    };
+
   
     
   const imgurl1= process.env.PUBLIC_URL + './img/cov.JPG'
@@ -38,7 +43,13 @@ MATLAB, Python (Pandas, Matplotlib, Statsmodel)
 <p>
 Outcome:
 Successfully achieved a Root Mean Square Value of 969 cases using DMD, showcasing its superior performance compared to other models. The project demonstrates proficiency in utilizing advanced forecasting techniques and provides valuable insights into the strengths of Dynamic Mode Decomposition in predicting COVID-19 trends.</p>
-      </div>
+<p>
+            <GitHubIcon />
+            <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/Emobot")}>
+              Code
+            </span>
+          </p>
+          </div>
     </div>
     
     </div>

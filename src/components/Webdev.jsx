@@ -24,6 +24,12 @@ const Webdev = () => {
 
   const redirectToPage = (pageUrl) => {
     history(pageUrl);}
+
+
+    const redirectToGitHub = (githubUrl) => {
+      window.location.href = githubUrl;
+    };
+
   const imgurl1= process.env.PUBLIC_URL + './img/mern1.JPG'
 
   return (
@@ -49,7 +55,19 @@ MERN Stack (MongoDB, Express.js, React, Node.js)
 <p>
 Outcome:
 A fully functional Pharmacy App that streamlines the buying process for customers, empowers admins with inventory management capabilities, and provides retailers with a convenient way to track and fulfill orders. </p>
-      </div>
+      <p>
+            <GitHubIcon />
+            <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/Pharmacy-app")}>
+              Code of Client
+            </span>
+          </p>
+          <p>
+            <GitHubIcon />
+            <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/pharmaapi")}>
+              Code of Server
+            </span>
+          </p>
+          </div>
     </div>
     
     </div>

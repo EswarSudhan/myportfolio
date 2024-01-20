@@ -11,6 +11,11 @@ const Compvis = () => {
 
   const redirectToPage = (pageUrl) => {
     history(pageUrl);}
+
+    const redirectToGitHub = (githubUrl) => {
+      window.location.href = githubUrl;
+    };
+
   
   const imgurl1= process.env.PUBLIC_URL + './img/dct.JPG';
   const imgurl2= process.env.PUBLIC_URL + './img/imgdeh.JPG'
@@ -39,7 +44,12 @@ MATLAB
 
 Outcome:
 Successfully developed an image compression algorithm using DCT, optimizing color images into grayscale with a compression rate of 20%. The project showcases proficiency in MATLAB and a deep understanding of image processing techniques.</p>
-      </div>
+<p>
+            <GitHubIcon />
+            <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/Image_compression_using_DCT")}>
+              Code
+            </span>
+          </p> </div>
     </div>
 
     
@@ -61,7 +71,12 @@ Python (Numpy, Matplotlib), Photoshop
 <p>
 Outcome:
 By introducing random masks to simulate various atmospheric conditions, the project successfully applied the Dehazing algorithm based on Dark Channel Prior to enhance remote sensing images. The dehazed images were then quantified by measuring the Euclidean distance, providing a clear metric for the amount of haze removed.</p>
-      </div>
+<p>
+            <GitHubIcon />
+            <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/image_dehazing")}>
+              Code
+            </span>
+          </p> </div>
     </div>
    
     </div>

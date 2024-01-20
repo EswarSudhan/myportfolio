@@ -11,7 +11,7 @@ body {
 
 .containersci {
   display: flex;
-  background-color: #00ffd9f0;
+  background-color: #90ffeef0;
   padding: 5px;
   align-items: center;
   margin: 5px;
@@ -29,7 +29,7 @@ body {
 
 .containervis {
   display: flex;
-  background-color: #ff8989f4;
+  background-color: #ffa7a7f4;
   padding: 5px;
   align-items: center;
   margin: 5px;
@@ -38,7 +38,7 @@ body {
 
 .containerdev {
   display: flex;
-  background-color: #fe96e9ee;
+  background-color: #ffbbf1ee;
   padding: 5px;
   align-items: center;
   margin: 5px;
@@ -93,5 +93,12 @@ body {
     font-size:20px;
    
 
+  }
+
+  .text-con span{
+    margin: 10px;
+    position: flex;
+    
+   cursor: pointer;
   }
   

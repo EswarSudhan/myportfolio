@@ -7,6 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 
+
 const Datasci = () => {
   const projects = [
     {
@@ -26,6 +27,12 @@ const Datasci = () => {
 
   const redirectToPage = (pageUrl) => {
     history(pageUrl);}
+  
+    const redirectToGitHub = (githubUrl) => {
+      window.location.href = githubUrl;
+    };
+
+
   const imgurl1= process.env.PUBLIC_URL + './img/emobot.JPG'
   const imgurl2= process.env.PUBLIC_URL + './img/simclr.JPG'
 
@@ -55,8 +62,14 @@ Langchain, Tensorflow, OpenCV, Streamlit
 </p><p>
 Outcome:
 Implemented a responsive chatbot system where user satisfaction is gauged through facial emotion analysis. Leveraging Langchain, answers were dynamically reframed by the chatbot, showcasing an innovative approach to improving user interaction. Explore this project to witness how cutting-edge technologies can elevate conversational AI, creating a more personalized and engaging user experience.
-          <GitHubIcon/>
+          
         </p>
+        <p>
+            <GitHubIcon />
+            <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/Emobot")}>
+              Code
+            </span>
+          </p>
       </div>
     </div>
     <div className="containersci">
@@ -75,8 +88,14 @@ Langchain, Tensorflow, OpenCV, Streamlit
 </p><p>
 Outcome:
 Implemented a responsive chatbot system where user satisfaction is gauged through facial emotion analysis. Leveraging Langchain, answers were dynamically reframed by the chatbot, showcasing an innovative approach to improving user interaction. Explore this project to witness how cutting-edge technologies can elevate conversational AI, creating a more personalized and engaging user experience.
-          <GitHubIcon/>
+          
         </p>
+        <p>
+            <GitHubIcon />
+            <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/music_genre_classification_simclr")}>
+              Code
+            </span>
+          </p>
       </div>
     </div>
    
