@@ -5,6 +5,7 @@ import Dataanalysis from "./pages/Dataanalysis";
 import Computervision from "./pages/Computervision";
 import Webdevelopment from "./pages/Webdevelopment";
 import Photo from "./components/Photo";
+import Upload from "./pages/Upload";
 const App = () => {
   
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/dataanalysis" element={<Dataanalysis />} />
         <Route path="/webdevelopment" element={<Webdevelopment />} />
         <Route path="/photography" element={<Photo />} />
+        <Route path="/upload" element={<Upload />} />
         
 
         

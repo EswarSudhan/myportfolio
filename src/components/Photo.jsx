@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Dropzone from 'react-dropzone-uploader';
 import Modal from 'react-modal';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import { useNavigate } from 'react-router-dom';
 import './pho_sty.css';
 
 const Photos = () => {
@@ -13,7 +15,7 @@ const Photos = () => {
     useEffect(() => {
         const fetchImages = async () => {
             try {
-                const response = await axios.get('http://localhost:5001/api/images');
+                const response = await axios.get('https://myportfilioapi.vercel.app/api/images');
                 setImages(response.data);
             } catch (error) {
                 console.error('Error fetching images:', error);
@@ -31,7 +33,7 @@ const Photos = () => {
     const getUploadParams = ({ file, meta }) => {
         const body = new FormData();
         body.append('image', file);
-        return { url: 'http://localhost:5001/api/upload', body };
+        return { url: 'https://myportfilioapi.vercel.app/api/upload', body };
     };
 
     const handleImageClick = (image) => {
@@ -42,26 +44,27 @@ const Photos = () => {
         setSelectedImage(null);
     };
 
+    const history = useNavigate();
+
+  const redirectToPage = (pageUrl) => {
+    history(pageUrl);}
+
     return (
         <div>
-            <h1>Image Gallery</h1>
-
-            <Dropzone
-                getUploadParams={getUploadParams}
-                onChangeStatus={handleUploadSuccess}
-                accept="image/jpeg, image/jpg"
-                inputContent="Drag or click to upload JPEG images"
-                styles={{
-                    dropzone: { borderColor: '#fff', backgroundColor: 'rgba(255, 255, 255, 0.2)', padding: '20px', borderRadius: '10px', cursor: 'pointer', transition: 'background-color 0.3s ease' },
-                    dropzoneActive: { backgroundColor: 'rgba(255, 255, 255, 0.3)' },
-                }}
-            />
+            <div className="navbar" >
+          
+        
+          <h1 className="navbar-title" onClick={() => redirectToPage("/")}><ArrowBackIosNewIcon/>Back</h1>
+          
+        </div>
+           
+        
 
             <div className="photo-containera">
                 {images.map((image) => (
                     <div key={image._id} className="image-containera">
                         <img
-                            src={`http://localhost:5001${image.path}`}
+                            src={`https://myportfilioapi.vercel.app${image.path}`}
                             alt={image.filename}
                             className="image-thumbnail"
                             onClick={() => handleImageClick(image)}
@@ -79,7 +82,7 @@ const Photos = () => {
             >
                 {selectedImage && (
                     <img
-                        src={`http://localhost:5001${selectedImage.path}`}
+                        src={`https://myportfilioapi.vercel.app${selectedImage.path}`}
                         alt={selectedImage.filename}
                         className="enlarged-image"
                     />

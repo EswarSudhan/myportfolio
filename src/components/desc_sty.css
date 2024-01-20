@@ -43,11 +43,13 @@ body {
   margin: 0;
   font-size: 3vw; /* Use viewport width for responsive font size */
   font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+  
 }
 .text-container h2 {
   margin: 0;
   font-size: 2vw; /* Use viewport width for responsive font size */
   font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+ 
 }
 
 .circular-image {

@@ -4,7 +4,7 @@ import './ho_sty.css'; // Import the CSS file
 const Hoconb = () => {
   return (
     <div className="horizontal-containerb">
-      <h1>My Publications</h1>
+      <h1>My Publications:</h1>
       <h2>Enhancing Chatbot Interaction with Emotion Recognition: Emobot  (CIS-2023)</h2>
       <p>
 • Built a novel chatbot using Langchain framework, Streamlit and integrated it with facial emotion detector that uses
