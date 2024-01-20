@@ -1,14 +1,14 @@
 /* HorizontalContainer.css */
 
-.horizontal-container {
-    display: flex;
+.horizontal-containera {
+   
     align-items: center;
     justify-content: center;
-    background-color: rgba(47, 47, 47, 0.897); /* Green color with opacity */
-   
+    background-color: rgba(47, 47, 47, 0.925); /* Green color with opacity */
+    display: flex;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 5vw; /* Set your desired height */
+    height: 3vw; /* Set your desired height */
     padding: 10px; /* Set your desired padding */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.); /* Optional: Add box shadow for a subtle effect */
     color: #fff; /* Set text color to white */
@@ -16,11 +16,76 @@
     margin: 5px;
 
   }
+
+  .horizontal-container {
+    
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(47, 47, 47, 0.978); /* Green color with opacity */
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12vw; /* Set your desired height */
+    padding: 10px; /* Set your desired padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.); /* Optional: Add box shadow for a subtle effect */
+    color: #fff; /* Set text color to white */
+    border-radius: 10px;
+    margin: 5px;
+
+  }
+
+  .horizontal-containerb {
+    
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(242, 242, 242, 0.979); /* Green color with opacity */
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vw; /* Set your desired height */
+    padding: 10px; /* Set your desired padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.); /* Optional: Add box shadow for a subtle effect */
+    color: #292929; /* Set text color to white */
+    border-radius: 10px;
+    margin: 5px;
+
+  }
   
   /* Optional: Add more styles for your content inside the container */
-  .horizontal-container p {
+  .horizontal-containera p {
     margin: 0;
     font-size: 2vw; /* Use viewport width for responsive font size */
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+  }
+
+  .horizontal-container p {
+    margin: 0;
+    padding-left: 2vw;
+    font-size: 1.5vw; /* Use viewport width for responsive font size */
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+  }
+
+  .horizontal-container h1 {
+    margin: 1vw;
+    font-size: 2vw; /* Use viewport width for responsive font size */
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+  }
+
+  .horizontal-containerb p {
+    margin: 0;
+    padding-left: 2vw;
+    font-size: 1.5vw; /* Use viewport width for responsive font size */
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+  }
+
+  .horizontal-containerb h1 {
+    margin: 1vw;
+    font-size: 2vw; /* Use viewport width for responsive font size */
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+  }
+  .horizontal-containerb h2 {
+    margin: 1vw;
+    font-size: 1.5vw; /* Use viewport width for responsive font size */
   font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
   }
   
