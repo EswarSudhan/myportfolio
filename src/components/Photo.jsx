@@ -70,6 +70,7 @@ const Photos = () => {
                             onClick={() => handleImageClick(image)}
                         />
                         {/* SaveAltIcon and other icons if needed */}
+                        
                     </div>
                 ))}
             </div>
