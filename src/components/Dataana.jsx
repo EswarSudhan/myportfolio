@@ -19,7 +19,7 @@ const Dataana = () => {
 
   
     
-  const imgurl1= process.env.PUBLIC_URL + './img/cov.JPG'
+  const imgurl1= process.env.PUBLIC_URL + 'img/cov.JPG'
 
   return (
     <div>
@@ -28,7 +28,7 @@ const Dataana = () => {
     </div>
     <div className="containerana">
       <div className="image-container">
-        <img src={imgurl1} className="image" />
+        <img src={imgurl1} className="image" alt='img'/>
       </div>
       <div className="text-con">
         <p>Project Title: Covid-19 Forecasting and Comparative Analysis (Dec 2022 - Jan 2023)</p>
