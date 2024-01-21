@@ -33,7 +33,7 @@ const Datasci = () => {
     };
 
 
-  const imgurl1= process.env.PUBLIC_URL + '/img/pho_2.JPG'
+  const imgurl1= process.env.PUBLIC_URL + '/img/bg_1.JPG'
   const imgurl2= process.env.PUBLIC_URL + './img/simclr.JPG'
 
   return (
