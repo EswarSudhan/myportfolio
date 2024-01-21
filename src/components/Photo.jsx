@@ -29,7 +29,7 @@ const Photos = () => {
         console.log('Image uploaded successfully!');
         // You can update the state or trigger a re-fetch of images if needed
     };
-
+   
     const getUploadParams = ({ file, meta }) => {
         const body = new FormData();
         body.append('image', file);
