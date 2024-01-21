@@ -15,7 +15,7 @@ const Photos = () => {
     useEffect(() => {
         const fetchImages = async () => {
             try {
-                const response = await axios.get('https://myportfolioapi-delta.vercel.app/api/images');
+                const response = await axios.get('http://localhost:5001/api/images');
                 setImages(response.data);
             } catch (error) {
                 console.error('Error fetching images:', error);
@@ -33,7 +33,7 @@ const Photos = () => {
     const getUploadParams = ({ file, meta }) => {
         const body = new FormData();
         body.append('image', file);
-        return { url: 'https://myportfolioapi-delta.vercel.app/api/upload', body };
+        return { url: 'http://localhost:5001/api/upload', body };
     };
 
     const handleImageClick = (image) => {
@@ -64,13 +64,12 @@ const Photos = () => {
                 {images.map((image) => (
                     <div key={image._id} className="image-containera">
                         <img
-                            src={`https://myportfolioapi-delta.vercel.app${image.path}`}
+                            src={`http://localhost:5001${image.path}`}
                             alt={image.filename}
                             className="image-thumbnail"
                             onClick={() => handleImageClick(image)}
                         />
                         {/* SaveAltIcon and other icons if needed */}
-                        
                     </div>
                 ))}
             </div>
@@ -83,7 +82,7 @@ const Photos = () => {
             >
                 {selectedImage && (
                     <img
-                        src={`https://myportfolioapi-delta.vercel.app/${selectedImage.path}`}
+                        src={`http://localhost:5001${selectedImage.path}`}
                         alt={selectedImage.filename}
                         className="enlarged-image"
                     />
