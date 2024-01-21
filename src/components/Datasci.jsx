@@ -12,7 +12,7 @@ const Datasci = () => {
   const projects = [
     {
       id: 1,
-      imageURL: process.env.PUBLIC_URL + './img/passport.JPG',
+      imageURL: process.env.PUBLIC_URL + '../img/passport.JPG',
       text: 'Text content for Project 1',
     },
     {
@@ -33,7 +33,7 @@ const Datasci = () => {
     };
 
 
-  const imgurl1= process.env.PUBLIC_URL + './img/emobot.JPG'
+  const imgurl1= process.env.PUBLIC_URL + '/img/emobot.JPG'
   const imgurl2= process.env.PUBLIC_URL + './img/simclr.JPG'
 
   return (
