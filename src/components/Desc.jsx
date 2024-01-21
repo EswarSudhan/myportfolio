@@ -14,7 +14,7 @@ const Desc = () => {
         <div className="text-container">
           <h1>"Hello, I'm Eswar Sudhan,</h1>
           <h2> a B.Tech Artificial Intelligence Engineering student at Amrita Vishwa Vidyapeetham. Proficient in Machine Learning and Deep Learning, I'm currently delving into Full Stack Web Development. My journey is a blend of academic rigor and practical application, showcasing expertise in AI and a growing proficiency in web development. Join me as I navigate the realms of technology, blending precision with innovation. Welcome to my portfolio!"</h2>
-        <h1>"</h1>
+        
         </div>
         <div className="circular-image">
           <img src={circularImgUrl} alt="Circular Image" />
