@@ -19,7 +19,7 @@ const Dataana = () => {
 
   
     
-  const imgurl1= process.env.PUBLIC_URL + '/img/cov.JPG'
+  const imgurl1= process.env.PUBLIC_URL + './public/img/cov.JPG'
 
   return (
     <div>
