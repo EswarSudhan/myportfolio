@@ -102,4 +102,21 @@ body {
    cursor: pointer;
   }
 
+  @media (max-width: 767px) {
+    .text-con {
+      flex: 1;
+      padding: 0 20px;
+      color: #313131; /* White text color */
+      
+      font-family: Consolas, monaco, monospace;
+      font-size:2vw;
+     
+  
+    }
+    
+
+    }
+
+  
+
   

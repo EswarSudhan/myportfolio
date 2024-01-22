@@ -130,7 +130,7 @@
     font-size: 1.5vw;
     text-align: center;
     font-family: Verdana, sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Add a light shadow to the text */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9); /* Add a light shadow to the text */
     z-index: 2; /* Ensure the text is above the pseudo-element */
   }
   
@@ -170,6 +170,14 @@
         border-radius: 10px;
         transition: opacity 0.2s;
         background-size: cover; /* Set background size to cover */
+      }
+      .overlay p {
+        margin: 0;
+        font-size: 2vw;
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9); /* Add a light shadow to the text */
+        z-index: 2; /* Ensure the text is above the pseudo-element */
       }
       /* Add a container-content class for consistent content height */
 .document-container .container-content {

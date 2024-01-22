@@ -118,4 +118,41 @@
         margin-bottom:5px;
         margin-top:5px;
     }
+
+    .horizontal-container p {
+      display: flex;
+      margin: 0;
+      
+      font-size: 1.6vw; /* Use viewport width for responsive font size */
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    }
+  
+    .horizontal-container h1 {
+      margin: 1.5vw;
+      font-size: 2vw; /* Use viewport width for responsive font size */
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    }
+  
+    .horizontal-containerb p {
+      margin: 0;
+      padding-left: 2vw;
+      font-size: 1.6vw; /* Use viewport width for responsive font size */
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    }
+  
+    .horizontal-containerb h1 {
+      margin: 1vw;
+      font-size: 2vw; /* Use viewport width for responsive font size */
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    }
+    .horizontal-containerb h2 {
+      margin: 1vw;
+      font-size: 1.6vw; /* Use viewport width for responsive font size */
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    }
+    .horizontal-container h2 {
+  
+      font-size: 1.6vw; /* Use viewport width for responsive font size */
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    }
 }

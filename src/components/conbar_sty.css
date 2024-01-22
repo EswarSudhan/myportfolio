@@ -21,4 +21,19 @@
     opacity: 0.8;
     transform: scale(1.1); 
   }
+
+  @media (max-width: 767px) {
+    .conbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(47, 47, 47, 0.886);
+        padding: 2px;
+        
+        bottom: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+    
+}
   
