@@ -53,13 +53,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 20vw; /* Set your desired height */
-    padding: 60px; /* Set your desired padding */
+    padding: 61.5px; /* Set your desired padding */
     padding-right:40px;
     padding-left: 40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add box shadow for a subtle effect */
     color: #292929; /* Set text color to white */
     border-radius: 10px;
     margin-top: 20px;
+    margin-bottom:20px;
+
     
 
   }
@@ -116,13 +118,22 @@
         
     }
 
-    .horizontal-container,
+    .horizontal-container{
+      height: auto; /* Adjust height for mobile devices */
+      margin-right: 0; /* Remove right margin for mobile devices */
+      
+      margin-top:5px;
+      padding:5px;
+      margin-bottom:10px;
+      
+  }
     .horizontal-containerb {
         height: auto; /* Adjust height for mobile devices */
         margin-right: 0; /* Remove right margin for mobile devices */
-        margin-bottom:5px;
+        
         margin-top:5px;
         padding:5px;
+        margin-bottom:20px;
     }
 
     .horizontal-container p {
