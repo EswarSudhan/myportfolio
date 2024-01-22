@@ -71,7 +71,7 @@ body {
   
   .image-container {
     flex: 0 0 25.5vw;
-    
+    border-radius: 1vw;
      /* Set your desired fixed width */
     max-height: 400px; /* Set your desired fixed height */
     overflow: hidden;
