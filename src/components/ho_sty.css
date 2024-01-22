@@ -115,5 +115,7 @@
     .horizontal-containerb {
         height: auto; /* Adjust height for mobile devices */
         margin-right: 0; /* Remove right margin for mobile devices */
+        margin-bottom:5px;
+        margin-top:5px;
     }
 }
