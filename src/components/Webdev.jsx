@@ -30,7 +30,7 @@ const Webdev = () => {
       window.location.href = githubUrl;
     };
 
-  const imgurl1= process.env.PUBLIC_URL + './img/mern1.JPG'
+  const imgurl1= process.env.PUBLIC_URL + './img/mern1.jpg'
 
   return (
     <div>

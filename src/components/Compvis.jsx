@@ -17,8 +17,8 @@ const Compvis = () => {
     };
 
   
-  const imgurl1= process.env.PUBLIC_URL + './img/dct.JPG';
-  const imgurl2= process.env.PUBLIC_URL + './img/imgdeh.JPG'
+  const imgurl1= process.env.PUBLIC_URL + './img/dct.jpg';
+  const imgurl2= process.env.PUBLIC_URL + './img/imgdeh.jpg'
 
   return (
     <div>
