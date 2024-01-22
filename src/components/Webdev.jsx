@@ -31,6 +31,7 @@ const Webdev = () => {
     };
 
   const imgurl1= process.env.PUBLIC_URL + './img/mern1.jpg'
+  const imgurl2= process.env.PUBLIC_URL + './img/portfolio.jpg'
 
   return (
     <div>
@@ -64,6 +65,27 @@ A fully functional Pharmacy App that streamlines the buying process for customer
           <p>
             <GitHubIcon />
             <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/pharmaapi")}>
+              Code of Server
+            </span>
+          </p>
+          </div>
+    </div>
+
+    <div className="containerdev">
+      <div className="image-container">
+        <img src={imgurl2} className="image" />
+      </div>
+      <div className="text-con">
+        <p>"This website was done to show my works to you and in my POV to gain expertise in fullstack domain, I decided to go with the theme "colours" and designed it accordingly using React.js, Hope you like it....." </p>
+      <p>
+            <GitHubIcon />
+            <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/myportfolio")}>
+              Code of Client
+            </span>
+          </p>
+          <p>
+            <GitHubIcon />
+            <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/myportfilioapi")}>
               Code of Server
             </span>
           </p>

@@ -92,12 +92,14 @@ Outcome:
 Implemented a simclr model that classifies music genre with 40% accuracy which is just behind state of the art accuracy 51% considering unsupervised approach.Pytoch audio was used to extract melspectrogram of the song and Lambda labs was used to train GPU  intensive training
           
         </p>
+       
         <p>
             <GitHubIcon />
             <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/music_genre_classification_simclr")}>
               Code
             </span>
           </p>
+          
       </div>
     </div>
    
