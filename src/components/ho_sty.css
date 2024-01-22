@@ -30,8 +30,9 @@
     
     background-size: cover;
     background-repeat: no-repeat;
-    height: 27vw; /* Set your desired height */
-    padding: 10px; /* Set your desired padding */
+    height: 20vw; /* Set your desired height */
+    padding-top: 10px; /* Set your desired padding */
+    padding-bottom:115px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add box shadow for a subtle effect */
     color: #fff; /* Set text color to white */
     border-radius: 10px;
