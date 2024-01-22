@@ -59,12 +59,12 @@ const Photos = () => {
           <h1 className="navbar-title" onClick={() => redirectToPage("/")}><ArrowBackIosNewIcon/>Back</h1>
           
         </div>
-        <div className='gif'>
+        {/*<div className='gif'>
             <img src={imgurl1} alt="Under Construction" />
-        </div>
+    </div>*/}
            
         
-{/*
+
             <div className="photo-containera">
                 {images.map((image) => (
                     <div key={image._id} className="image-containera">
@@ -92,7 +92,7 @@ const Photos = () => {
                         className="enlarged-image"
                     />
                 )}
-            </Modal>*/}
+            </Modal>
         </div>
     );
 }; 
