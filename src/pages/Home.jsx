@@ -15,8 +15,10 @@ const Home = () => {
       {/*<TextContainer/>*/}
       <Hocona/>
       <Project/>
+      <div className='onecon'>
       <Hocon/>
       <Hoconb/>
+      </div>
     </div>
   );
 };

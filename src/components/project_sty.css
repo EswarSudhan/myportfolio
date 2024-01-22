@@ -1,12 +1,14 @@
 .dynamic-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.732);
+  background-color: rgba(255, 255, 255, 0);
+  margin-left:5%;
+  margin-right:5%;
 }
 
 .document-container {
   flex: 0 0 calc(20% - 20px);
-  height: 27vw;
+  height: 24vw;
   position: relative;
   background-position: center;
   color: white;
