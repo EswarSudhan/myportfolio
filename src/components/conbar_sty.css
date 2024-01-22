@@ -1,0 +1,24 @@
+.conbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(47, 47, 47, 0.886);
+    padding: 10px;
+    
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .conbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: transform 0.2s ease-in-out; 
+  }
+  
+  .conbar a:hover {
+    opacity: 0.8;
+    transform: scale(1.1); 
+  }
+  

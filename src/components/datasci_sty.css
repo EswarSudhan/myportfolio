@@ -67,7 +67,7 @@ body {
     display: flex;
   }
   
-  
+  .icon{}
   
   .image-container {
     flex: 0 0 25.5vw;
@@ -101,4 +101,5 @@ body {
     
    cursor: pointer;
   }
+
   

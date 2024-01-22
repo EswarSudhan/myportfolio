@@ -36,10 +36,12 @@ const Datasci = () => {
   const imgurl1= process.env.PUBLIC_URL + './img/emobot.jpg'
   const imgurl2= process.env.PUBLIC_URL + './img/simclr.jpg'
 
+  
+
   return (
     <div>
 
-        <div className="navbar" >
+        <div className="navbar" > 
           
         
       <h1 className="navbar-title" onClick={() => redirectToPage("/")}><ArrowBackIosNewIcon/>Back</h1>
@@ -77,17 +79,17 @@ Implemented a responsive chatbot system where user satisfaction is gauged throug
         <img src={imgurl2} className="image" />
       </div>
       <div className="text-con">
-        <p>Project Title: Enhanced Chatbot with Facial Emotion Recognition (May 2023 - June 2023)</p>
+        <p>Project Title: Music genre classification using simclr (May 2023 - June 2023)</p>
         <p>
 
 Objective:
-To develop an intelligent chatbot incorporating Facial Emotion Recognition to assess user satisfaction with responses. The chatbot adapts and refines answers based on the user's facial expressions.
+To Classify music genre of songs using simclr(Contrastive Learning) in unsupervised manner.
 </p><p>
 Tools/Technologies Used:
-Langchain, Tensorflow, OpenCV, Streamlit
+Tensorflow, Pytorch, Lambda Labs
 </p><p>
 Outcome:
-Implemented a responsive chatbot system where user satisfaction is gauged through facial emotion analysis. Leveraging Langchain, answers were dynamically reframed by the chatbot, showcasing an innovative approach to improving user interaction. Explore this project to witness how cutting-edge technologies can elevate conversational AI, creating a more personalized and engaging user experience.
+Implemented a simclr model that classifies music genre with 40% accuracy which is just behind state of the art accuracy 51% considering unsupervised approach.Pytoch audio was used to extract melspectrogram of the song and Lambda labs was used to train GPU  intensive training
           
         </p>
         <p>

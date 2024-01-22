@@ -7,6 +7,7 @@ import Project from '../components/Project';
 import Hocon from '../components/Hocon';
 import Hocona from '../components/Hocona';
 import Hoconb from "../components/Hoconb"
+import Conbar from '../components/Conbar';
 const Home = () => {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ const Home = () => {
       <Hocon/>
       <Hoconb/>
       </div>
+      <Conbar/>
     </div>
   );
 };

@@ -12,6 +12,8 @@ const Photos = () => {
     const [images, setImages] = useState([]);
     const [selectedImage, setSelectedImage] = useState(null);
 
+    const imgurl1= process.env.PUBLIC_URL + './img/gif.gif'
+
     useEffect(() => {
         const fetchImages = async () => {
             try {
@@ -57,9 +59,12 @@ const Photos = () => {
           <h1 className="navbar-title" onClick={() => redirectToPage("/")}><ArrowBackIosNewIcon/>Back</h1>
           
         </div>
+        <div className='gif'>
+            <img src={imgurl1} alt="Under Construction" />
+        </div>
            
         
-
+{/*
             <div className="photo-containera">
                 {images.map((image) => (
                     <div key={image._id} className="image-containera">
@@ -69,12 +74,12 @@ const Photos = () => {
                             className="image-thumbnail"
                             onClick={() => handleImageClick(image)}
                         />
-                        {/* SaveAltIcon and other icons if needed */}
+                        
                     </div>
                 ))}
             </div>
 
-            {/* Modal for displaying the selected image */}
+            
             <Modal
                 isOpen={!!selectedImage}
                 onRequestClose={handleModalClose}
@@ -87,7 +92,7 @@ const Photos = () => {
                         className="enlarged-image"
                     />
                 )}
-            </Modal>
+            </Modal>*/}
         </div>
     );
 };
