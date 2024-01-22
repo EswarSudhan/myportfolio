@@ -69,6 +69,7 @@
   /* Optional: Add more styles for your content inside the container */
   .horizontal-containera p {
     margin: 0;
+    
     font-size: 1.5vw; /* Use viewport width for responsive font size */
   font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
   }
@@ -113,8 +114,8 @@
   @media (max-width: 767px) {
     .onecon {
         flex-direction: column; /* Change to a column layout for mobile devices */
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
         
     }
 
@@ -139,7 +140,7 @@
     .horizontal-container p {
       display: flex;
       margin: 0;
-      
+      padding-left:15px;
       font-size: 2vw; /* Use viewport width for responsive font size */
     font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
     }
@@ -164,11 +165,12 @@
     }
     .horizontal-containerb h2 {
       margin: 1vw;
+      
       font-size: 2vw; /* Use viewport width for responsive font size */
     font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
     }
     .horizontal-container h2 {
-  
+      padding-left:10px;
       font-size: 2vw; /* Use viewport width for responsive font size */
     font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
     }
