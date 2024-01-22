@@ -47,7 +47,7 @@ const Photos = () => {
     };
 
     const history = useNavigate();
-
+ 
   const redirectToPage = (pageUrl) => {
     history(pageUrl);}
 
