@@ -95,6 +95,6 @@ const Photos = () => {
             </Modal>*/}
         </div>
     );
-};
+}; 
 
 export default Photos;
