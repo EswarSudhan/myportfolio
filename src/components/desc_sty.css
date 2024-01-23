@@ -75,11 +75,38 @@ body {
 /* Media Queries for Responsive Design */
 
 @media only screen and (max-width: 768px) {
+  .con {
+    flex-direction: column; /* Set flex-direction to column for vertical alignment */
+  }
+
   .text-container {
-    top: 40%;
+    top: 24%;
+    width: 60%; /* Adjust the width as needed */
+    left: 35%;
+    transform: translateX(-50%);
+    
   }
 
   .circular-image {
-    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    top: 50%; /* Adjust the top value as needed */
+  }
+
+  .circular-image img {
+    width: 20vw; /* Use viewport width for responsive image width */
+    height: 20vw; /* Use viewport width for responsive image height */
+  }
+  .text-container h1 {
+    margin: 0;
+    font-size: 3.5vw; /* Use viewport width for responsive font size */
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    
+  }
+  .text-container h2 {
+    margin: 0;
+    font-size: 2.5vw; /* Use viewport width for responsive font size */
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+   
   }
 }

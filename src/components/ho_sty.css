@@ -138,6 +138,13 @@
         margin-bottom:20px;
     }
 
+    .horizontal-containera p {
+      margin: 0;
+      
+      font-size: 2vw; /* Use viewport width for responsive font size */
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    }
+
     .horizontal-container p {
       display: flex;
       margin: 0;
