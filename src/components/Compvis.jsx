@@ -1,11 +1,25 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import './datasci_sty.css';
 import { useNavigate } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import Modal from 'react-modal';
 
 
 const Compvis = () => {
+  
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (imageURL) => {
+
+    setSelectedImage(imageURL);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);};
 
   const history = useNavigate();
 
@@ -26,7 +40,7 @@ const Compvis = () => {
         <h1 className="navbar-title" onClick={() => redirectToPage("/")}><ArrowBackIosNewIcon/>Back</h1>
     </div>
     <div className="containervis">
-      <div className="image-container">
+    <div className="image-container" onClick={() => handleImageClick(imgurl1)}>
         <img src={imgurl1} className="image" />
       </div>
       <div className="text-con">
@@ -54,7 +68,7 @@ Successfully developed an image compression algorithm using DCT, optimizing colo
 
     
     <div className="containervis">
-      <div className="image-container">
+      <div className="image-container" onClick={() => handleImageClick(imgurl2)}>
         <img src={imgurl2} className="image" />
       </div>
       <div className="text-con">
@@ -78,6 +92,9 @@ By introducing random masks to simulate various atmospheric conditions, the proj
             </span>
           </p> </div>
     </div>
+    <Modal isOpen={isModalOpen} onRequestClose={closeModal}>
+        <img src={selectedImage} alt="Enlarged" />
+      </Modal>
    
     </div>
   );

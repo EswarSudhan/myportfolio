@@ -1,24 +1,26 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import './datasci_sty.css';
 import { useNavigate } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import Modal from 'react-modal';
 
 
 const Webdev = () => {
-  const projects = [
-    {
-      id: 1,
-      imageURL: process.env.PUBLIC_URL + './img/passport.JPG',
-      text: 'Text content for Project 1',
-    },
-    {
-      id: 2,
-      imageURL: 'https://example.com/image2.jpg',
-      text: 'Text content for Project 2',
-    },
-    // Add more projects as needed
-  ];
+ 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (imageURL) => {
+
+    setSelectedImage(imageURL);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   const history = useNavigate();
 
@@ -39,7 +41,7 @@ const Webdev = () => {
         <h1 className="navbar-title" onClick={() => redirectToPage("/")}><ArrowBackIosNewIcon/>Back</h1>
     </div>
     <div className="containerdev">
-      <div className="image-container">
+    <div className="image-container" onClick={() => handleImageClick(imgurl1)}>
         <img src={imgurl1} className="image" />
       </div>
       <div className="text-con">
@@ -72,7 +74,7 @@ A fully functional Pharmacy App that streamlines the buying process for customer
     </div>
 
     <div className="containerdev">
-      <div className="image-container">
+    <div className="image-container" onClick={() => handleImageClick(imgurl2)}>
         <img src={imgurl2} className="image" />
       </div>
       <div className="text-con">
@@ -91,6 +93,9 @@ A fully functional Pharmacy App that streamlines the buying process for customer
           </p>
           </div>
     </div>
+    <Modal isOpen={isModalOpen} onRequestClose={closeModal}>
+        <img src={selectedImage} alt="Enlarged" />
+      </Modal>
     
     </div>
   );

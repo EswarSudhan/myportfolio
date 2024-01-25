@@ -1,10 +1,12 @@
-// ProjectPage.js
-import React from 'react';
+
+
+import React, { useState } from 'react';
 import './datasci_sty.css';
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import Modal from 'react-modal';
 
 
 
@@ -21,16 +23,31 @@ const Datasci = () => {
       text: 'Text content for Project 2',
     },
     // Add more projects as needed
+
   ];
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (imageURL) => {
+
+    setSelectedImage(imageURL);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   const history = useNavigate();
 
   const redirectToPage = (pageUrl) => {
-    history(pageUrl);}
-  
-    const redirectToGitHub = (githubUrl) => {
-      window.location.href = githubUrl;
-    };
+    history(pageUrl);
+  };
+
+  const redirectToGitHub = (githubUrl) => {
+    window.location.href = githubUrl;
+  };
 
 
   const imgurl1= process.env.PUBLIC_URL + './img/emobot.jpg'
@@ -49,7 +66,7 @@ const Datasci = () => {
     </div>
    
     <div className="containersci">
-      <div className="image-container">
+    <div className="image-container" onClick={() => handleImageClick(imgurl1)}>
         <img src={imgurl1} className="image" />
       </div>
       <div className="text-con">
@@ -75,7 +92,7 @@ Implemented a responsive chatbot system where user satisfaction is gauged throug
       </div>
     </div>
     <div className="containersci">
-      <div className="image-container">
+    <div className="image-container" onClick={() => handleImageClick(imgurl2)}>
         <img src={imgurl2} className="image" />
       </div>
       <div className="text-con">
@@ -99,12 +116,16 @@ Implemented a simclr model that classifies music genre with 40% accuracy which i
               Code
             </span>
           </p>
+
+         
           
       </div>
     </div>
-   
+    <Modal isOpen={isModalOpen} onRequestClose={closeModal}>
+        <img src={selectedImage} alt="Enlarged" />
+      </Modal>
     </div>
   );
 };
 
-export default Datasci;
+export default Datasci;   
