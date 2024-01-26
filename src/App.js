@@ -6,9 +6,11 @@ import Computervision from "./pages/Computervision";
 import Webdevelopment from "./pages/Webdevelopment";
 import Photo from "./components/Photo";
 import Upload from "./pages/Upload";
+import {Analytics} from "@vercel/analytics/react"
 const App = () => {
   
   return (
+    
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +24,10 @@ const App = () => {
 
         
       </Routes>
+      <Analytics/>
     </Router>
+   
+    
   );
 };
 
