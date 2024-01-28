@@ -59,9 +59,9 @@ MATLAB
 Outcome:
 Successfully developed an image compression algorithm using DCT, optimizing color images into grayscale with a compression rate of 20%. The project showcases proficiency in MATLAB and a deep understanding of image processing techniques.</p>
 <p>
-            <GitHubIcon />
+          
             <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/Image_compression_using_DCT")}>
-              Code
+            <GitHubIcon />
             </span>
           </p> </div>
     </div>
@@ -86,9 +86,9 @@ Python (Numpy, Matplotlib), Photoshop
 Outcome:
 By introducing random masks to simulate various atmospheric conditions, the project successfully applied the Dehazing algorithm based on Dark Channel Prior to enhance remote sensing images. The dehazed images were then quantified by measuring the Euclidean distance, providing a clear metric for the amount of haze removed.</p>
 <p>
-            <GitHubIcon />
+           
             <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/image_dehazing")}>
-              Code
+            <GitHubIcon />
             </span>
           </p> </div>
     </div>

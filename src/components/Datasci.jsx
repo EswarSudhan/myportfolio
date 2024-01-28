@@ -84,9 +84,9 @@ Implemented a responsive chatbot system where user satisfaction is gauged throug
           
         </p>
         <p>
-            <GitHubIcon />
+           
             <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/Emobot")}>
-              Code
+            <GitHubIcon />
             </span>
           </p>
       </div>
@@ -111,9 +111,9 @@ Implemented a simclr model that classifies music genre with 40% accuracy which i
         </p>
        
         <p>
-            <GitHubIcon />
+            
             <span onClick={() => redirectToGitHub("https://github.com/EswarSudhan/music_genre_classification_simclr")}>
-              Code
+            <GitHubIcon />
             </span>
           </p>
 
