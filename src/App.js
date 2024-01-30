@@ -10,7 +10,7 @@ import {Analytics} from "@vercel/analytics/react"
 const App = () => {
   
   return (
-    
+         
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
